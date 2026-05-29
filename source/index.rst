@@ -1,17 +1,9 @@
-.. papyrus-scroll documentation master file, created by
-   sphinx-quickstart on Fri May 15 08:54:54 2026.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-papyrus-scroll documentation
-============================
-
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+Welcome to Papyrus Scroll
+=========================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   core_terms
+   schedule1
