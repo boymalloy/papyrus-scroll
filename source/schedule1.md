@@ -2,8 +2,10 @@
 
 ## Pricing
 
-Pricing is {ref}`Interchange++`
+Pricing is {ref}`Interchange`
 
-Refer to {ref}`user-onboarding`
+Refer to {ref}`User Onboarding`
 
-As set out in {ref}`shaggy-dog`
+Refer to {ref}`Shaggy Dog Story`
+
+Refer to {ref}`Shaggy Cat Story`

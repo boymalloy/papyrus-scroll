@@ -2,36 +2,53 @@
 
 ## Definitions
 
-
-### Something
-Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
-
-### Something
-Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
-
-### Something
-Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
-
-### Something
-Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
-
-### Something
-Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
-
-### Something
-Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
-
-
-(Interchange++)=
+(Interchange)=
 ### Interchange++
-Blah Blah Blah
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
 
 ## Clauses
 
-(user-onboarding)=
-## 1.1 User Onboarding
+(User Onboarding)=
+### User Onboarding
 Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
 
-(shaggy-dog)=
-## 1.2 Shaggy dog story
+(Shaggy Dog Story)=
+### Shaggy dog story
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+(shaggy cat story)=
+### Shaggy cat story
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+### Other
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+### Other
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+### Other
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+### Other
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+### Other
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+### Other
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+### Other
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+### Other
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+### Other
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+### Other
+Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
+
+### Other
 Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long Text about this long 
