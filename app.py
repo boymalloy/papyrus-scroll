@@ -3,7 +3,7 @@ from flask_bootstrap import Bootstrap
 from flask import render_template
 import os
 from dotenv import load_dotenv
-from sphinxtensions import DocxExporter
+from pathlib import Path
 
 # Create the Flask app
 app = Flask(__name__)
@@ -18,9 +18,15 @@ bootstrap = Bootstrap(app)
 # Bypass a problematic CDN
 app.config["BOOTSTRAP_SERVE_LOCAL"] = True
 
-exporter = DocxExporter()
-exporter.convert_all()
+# from sphinxtensions import DocxExporter
+# exporter = DocxExporter()
+# exporter.convert_all()
 
 @app.route('/')
 def index():
-    return render_template('index.html', payload="Nothing to see yet")
+    return render_template('index.html', payload="Greetings")
+
+@app.route("/edit")
+def edit_md():
+    md_text = Path("source/core_terms.md").read_text(encoding="utf-8")
+    return render_template("edit.html", md_text=md_text)
