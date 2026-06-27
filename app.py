@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_bootstrap import Bootstrap
-from flask import render_template
+from flask import render_template, request
 import os
 from dotenv import load_dotenv
 from pathlib import Path
@@ -22,11 +22,34 @@ app.config["BOOTSTRAP_SERVE_LOCAL"] = True
 # exporter = DocxExporter()
 # exporter.convert_all()
 
+@app.route('/sandbox')
+def sandbox_page():
+    return render_template('sandbox.html', source_files=source_files)
+
+def list_source_files():
+    source_files = []
+
+    for root, dirs, files in os.walk("source/"):
+        for file in files:
+            file_path = Path(file)
+            if file_path.suffix == ".md" and file != "index.md":
+                this_file = []
+                this_file.append(file)
+                title = file_path.stem
+                title = title.replace("_", " ")
+                title = title.title()
+                this_file.append(title)
+                source_files.append(this_file)
+
+    return source_files
+
 @app.route('/')
-def index():
-    return render_template('index.html', payload="Greetings")
+def index():        
+    return render_template('index.html', source_files=list_source_files())
 
 @app.route("/edit")
 def edit_md():
-    md_text = Path("source/core_terms.md").read_text(encoding="utf-8")
+    file_name = request.args.get('file')
+    file_path = "source/" + file_name
+    md_text = Path(file_path).read_text(encoding="utf-8")
     return render_template("edit.html", md_text=md_text)
