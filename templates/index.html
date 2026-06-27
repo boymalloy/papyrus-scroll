@@ -5,10 +5,19 @@
 
     {% block page_content %}
 
-    <h1>Here we go</h1>
+    <h1>Welcome to Papyrus Scroll</h1>
+    <h2>Your documents</h2>
         {% for item in source_files %}
            <p><a href="/edit?file={{item[0]}}">{{item[1]}}</a></p> 
         {% endfor %}
+
+    <h2>More options</h2>
+
+    <p><a href="">Create a new document</a></p>
+
+    <p><a href="">Export all documents</a></p>
+
+
 {% endblock %}
 
 </div>

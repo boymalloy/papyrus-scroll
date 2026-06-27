@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template, request, redirect, url_for, session
 from flask_bootstrap import Bootstrap
 from flask import render_template, request
 import os
@@ -11,6 +12,8 @@ app = Flask(__name__)
 # Load the dev flaskenv
 if os.getenv("FLASK_ENV") != "production":
     load_dotenv(".flaskenv")
+
+app.secret_key = "sfklfklfdakl;ad;lk,.cz,.cdslk;dkldkd;lkdkl;dkl;"
 
 # Setup bootstrap
 bootstrap = Bootstrap(app)
@@ -49,7 +52,23 @@ def index():
 
 @app.route("/edit")
 def edit_md():
+
     file_name = request.args.get('file')
     file_path = "source/" + file_name
     md_text = Path(file_path).read_text(encoding="utf-8")
-    return render_template("edit.html", md_text=md_text)
+    return render_template("edit.html", md_text=md_text, file_name=file_name)
+
+@app.route("/save", methods=["GET", "POST"])
+def save_md():
+    # Get the submissions from the form
+    file_name = request.form["file_name"]
+    md_text = request.form["md_text"]
+
+    md_path = "source/" + file_name
+
+    with open(md_path, 'w') as file:
+        file.write(md_text)
+
+    redirect_url = "/edit?file=" + file_name
+
+    return redirect(redirect_url)
