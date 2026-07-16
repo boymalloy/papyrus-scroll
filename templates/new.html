@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+
+    {% block page_content %}
+
+    <h1>Add a new document</h1>
+    <p>&nbsp;</p>
+    <div><form  id="new-doc-form" action="/new_process" method="post" enctype="multipart/form-data">
+
+        <label>Document title: &nbsp; &nbsp; </label><input type="text" name="title" id="title" value="">
+
+      <button type="submit">Save</button>
+  </form>
+</div>
+
+{% endblock %}
+
+</div>
+{% endblock %}

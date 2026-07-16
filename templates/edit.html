@@ -1,31 +1,39 @@
-<div id="editor"></div>
+{% extends "base.html" %}
 
-<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css">
-<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+{% block content %}
+<div class="container">
+  {% block page_content %}
 
-<form  id="editor-form" action="/save" method="post" enctype="multipart/form-data">
+  <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css">
+  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
 
-        <input type="hidden" name="md_text" id="md_text" value="">
-        <input type="hidden" name="file_name" value="{{file_name}}">
+  <form id="editor-form" action="/save" method="post">
+    <div id="editor"></div>
 
-      <button type="submit">Save</button>
+    <input type="hidden" name="md_text" id="md_text">
+    <input type="hidden" name="file_name" value="{{ file_name }}">
+
+    <button type="submit">Save</button>
   </form>
 
-<script>
-  const editor = new toastui.Editor({
-    el: document.querySelector('#editor'),
-    height: '500px',
-    initialEditType: 'wysiwyg',
-    previewStyle: 'vertical',
-    initialValue: {{ md_text | tojson }}
-  });
+  <script>
+    const editor = new toastui.Editor({
+      el: document.querySelector('#editor'),
+      height: '500px',
+      initialEditType: 'wysiwyg',
+      previewStyle: 'vertical',
+      initialValue: {{ md_text|default('')|tojson }}
+    });
 
-  const hiddenField = document.querySelector('#md_text');
+    const hiddenField = document.querySelector('#md_text');
 
-  document.querySelector('#editor-form').addEventListener('submit', function () {
-  hiddenField.value = editor.getMarkdown();
-});
-</script>
+    document.querySelector('#editor-form').addEventListener('submit', function () {
+      hiddenField.value = editor.getMarkdown();
+    });
+  </script>
 
-<p><a href="/">Back to index</a></p>
+  <p><a href="/">Back to index</a></p>
 
+  {% endblock %}
+</div>
+{% endblock %}

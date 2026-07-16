@@ -21,10 +21,6 @@ bootstrap = Bootstrap(app)
 # Bypass a problematic CDN
 app.config["BOOTSTRAP_SERVE_LOCAL"] = True
 
-# from sphinxtensions import DocxExporter
-# exporter = DocxExporter()
-# exporter.convert_all()
-
 @app.route('/sandbox')
 def sandbox_page():
     return render_template('sandbox.html', source_files=source_files)
@@ -72,3 +68,33 @@ def save_md():
     redirect_url = "/edit?file=" + file_name
 
     return redirect(redirect_url)
+
+@app.route("/new")
+def new():
+    return render_template("new.html")
+
+@app.route("/new_process", methods=["GET", "POST"])
+def new_process():
+    # Get the submissions from the form
+    title = request.form["title"]
+
+    md_content = "# " + str(title)
+
+    slug = title = title.replace(" ", "_")
+    slug = slug.lower()
+
+    file_name = slug + ".md"
+
+    path = "source/" + file_name
+
+    with open(path, 'w') as file:
+        file.write(md_content)
+
+    return redirect("/edit?file=" + file_name)
+
+@app.route("/export")
+def export():
+    from sphinxtensions import DocxExporter
+    exporter = DocxExporter()
+    exporter.convert_all()
+    return render_template("export.html")
