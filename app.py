@@ -13,8 +13,6 @@ app = Flask(__name__)
 if os.getenv("FLASK_ENV") != "production":
     load_dotenv(".flaskenv")
 
-app.secret_key = "sfklfklfdakl;ad;lk,.cz,.cdslk;dkldkd;lkdkl;dkl;"
-
 # Setup bootstrap
 bootstrap = Bootstrap(app)
 
