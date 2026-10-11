@@ -5,3 +5,6 @@ build/
 _build/
 .DS_Store
 .flaskenv
+docs/
+/govspeak-visual-editor
+/prosemirror
