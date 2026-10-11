@@ -1,3 +1,0 @@
-# Froggie
-
-Oh my gosh.

@@ -5,7 +5,9 @@
   {% block page_content %}
 
   <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css">
+  <link rel="stylesheet" href="static/css/papyrus-editor.css">
   <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+  <script src="static/js/papyrus-editor.js"></script>
 
   <form id="editor-form" action="/save" method="post">
     <div id="editor"></div>
@@ -17,10 +19,15 @@
   </form>
 
   <script>
+    const editorOptions = createPapyrusEditorOptions({
+        el: document.querySelector("#editor"),
+        initialValue: {{ md_text | tojson }}
+    });
+
     const editor = new toastui.Editor({
       el: document.querySelector('#editor'),
       height: '500px',
-      initialEditType: 'wysiwyg',
+      initialEditType: 'markdown',
       previewStyle: 'vertical',
       initialValue: {{ md_text|default('')|tojson }}
     });

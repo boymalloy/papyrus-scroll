@@ -1,0 +1,30 @@
+.papyrus-reference {
+    padding: 1px 5px;
+    border: 1px solid #9cbfe5;
+    border-radius: 4px;
+    background: #eaf3fc;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.papyrus-reference::before {
+    content: "🔗 ";
+}
+
+.papyrus-target {
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px dashed #888;
+    border-radius: 4px;
+    background: #f5f5f5;
+    font-size: 0.85em;
+}
+
+.papyrus-target::before {
+    content: "🏷 ";
+}
+
+.papyrus-target:target {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}
