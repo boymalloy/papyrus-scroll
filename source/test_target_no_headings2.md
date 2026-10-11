@@ -7,5 +7,6 @@
 3. extra
 4. extra extra
 5. three
-(core-terms-resolving-disputes3)=
+(clause-core-terms-resolving-disputes3)=
 6. thing
+7. 

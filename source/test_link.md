@@ -1,2 +1,2 @@
 # test link
-Blah blah so clause {ref}`core-terms-resolving-disputes2`
+Blah blah so clause {ref}`clause-resolving-disputes`

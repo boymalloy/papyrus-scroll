@@ -95,7 +95,6 @@ class DocxExporter:
 
         # Insert headings after each reference target
         insert_headings_all()
-        print("headings")
         
         # Make fresh versions of all the html files
         self.sphinx_make_html()
